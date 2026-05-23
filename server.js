@@ -62,7 +62,7 @@ async function sendPushNotification(token) {
 /*
 Runs every 30 minutes
 */
-cron.schedule("*/10 * * * *", async () => {
+cron.schedule("*/1 * * * *", async () => {
   console.log("Sending reminders...");
 
   for (const token of userTokens) {
