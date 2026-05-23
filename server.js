@@ -31,16 +31,16 @@ app.post("/save-token", (req, res) => {
   });
 });
 
-/*
+
 //Add this temporary API in backend: Notification should instantly appear. while open "http://localhost:3000/test-notification"
 app.get("/test-notification", async (req, res) => {
   for (const token of userTokens) {
     await sendPushNotification(token);
   }
 
-  res.send("Notification sent");
+  res.send("Test Notification sent");
 });
-*/
+
 
 async function sendPushNotification(token) {
   const message = {
