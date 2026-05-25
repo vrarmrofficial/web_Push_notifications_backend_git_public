@@ -57,10 +57,18 @@ app.get("/test-notification", async (req, res) => {
 });
 
 async function sendPushNotification(token) {
-  const message = {
+  /*const message = {
     notification: {
       title: "Campus Shoes",
       body: "Come back and explore our latest catalogue!"
+    },
+    token
+  };*/
+  const message = {
+    data: {
+      title: "Campus Shoes",
+      body: "Come back and explore our latest catalogue!",
+      url: "https://web-push-notify-test.netlify.app/"
     },
     token
   };
