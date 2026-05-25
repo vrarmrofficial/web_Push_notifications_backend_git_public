@@ -134,3 +134,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+/firebase-adminsdk.json
+/web-push-notification-93e38-firebase-adminsdk-fbsvc-0f3e5dba90.json
